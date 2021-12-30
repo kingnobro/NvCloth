@@ -1,14 +1,11 @@
 ##### Memo
 
-1. 关闭 CUDA：注释 `NvCloth\compiler\cmake\windows\NvCloth.cmake` 的下面两行
+1. 关闭 CUDA：在 `CmakeGenerateProjects.bat` 中
 
-    ```cmake
-    IF(NOT DEFINED NV_CLOTH_ENABLE_CUDA)
-    # SET(NV_CLOTH_ENABLE_CUDA 1)
-    # MESSAGE("Setting NV_CLOTH_ENABLE_CUDA 1")
-    ENDIF()
+    ```shell
+    set USE_CUDA=0
     ```
-
+    
 2. 不支持 Visual Studio 16 2019，需要自行下载 Visual Studio 14 2015
 
 
