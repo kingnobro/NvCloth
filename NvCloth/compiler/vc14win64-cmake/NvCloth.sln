@@ -1,0 +1,51 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ALL_BUILD", "ALL_BUILD.vcxproj", "{F77ABF2B-062F-3F0B-826A-2991E7C2ED1B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DDD42D62-DF14-3EF3-9D5B-551AD64F90B5} = {DDD42D62-DF14-3EF3-9D5B-551AD64F90B5}
+		{1703E8EE-6787-3163-A71D-D68E1D66FCA2} = {1703E8EE-6787-3163-A71D-D68E1D66FCA2}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NvCloth", "NvCloth.vcxproj", "{DDD42D62-DF14-3EF3-9D5B-551AD64F90B5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1703E8EE-6787-3163-A71D-D68E1D66FCA2} = {1703E8EE-6787-3163-A71D-D68E1D66FCA2}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ZERO_CHECK", "ZERO_CHECK.vcxproj", "{1703E8EE-6787-3163-A71D-D68E1D66FCA2}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		debug|x64 = debug|x64
+		checked|x64 = checked|x64
+		profile|x64 = profile|x64
+		release|x64 = release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F77ABF2B-062F-3F0B-826A-2991E7C2ED1B}.debug|x64.ActiveCfg = debug|x64
+		{F77ABF2B-062F-3F0B-826A-2991E7C2ED1B}.checked|x64.ActiveCfg = checked|x64
+		{F77ABF2B-062F-3F0B-826A-2991E7C2ED1B}.profile|x64.ActiveCfg = profile|x64
+		{F77ABF2B-062F-3F0B-826A-2991E7C2ED1B}.release|x64.ActiveCfg = release|x64
+		{DDD42D62-DF14-3EF3-9D5B-551AD64F90B5}.debug|x64.ActiveCfg = debug|x64
+		{DDD42D62-DF14-3EF3-9D5B-551AD64F90B5}.debug|x64.Build.0 = debug|x64
+		{DDD42D62-DF14-3EF3-9D5B-551AD64F90B5}.checked|x64.ActiveCfg = checked|x64
+		{DDD42D62-DF14-3EF3-9D5B-551AD64F90B5}.checked|x64.Build.0 = checked|x64
+		{DDD42D62-DF14-3EF3-9D5B-551AD64F90B5}.profile|x64.ActiveCfg = profile|x64
+		{DDD42D62-DF14-3EF3-9D5B-551AD64F90B5}.profile|x64.Build.0 = profile|x64
+		{DDD42D62-DF14-3EF3-9D5B-551AD64F90B5}.release|x64.ActiveCfg = release|x64
+		{DDD42D62-DF14-3EF3-9D5B-551AD64F90B5}.release|x64.Build.0 = release|x64
+		{1703E8EE-6787-3163-A71D-D68E1D66FCA2}.debug|x64.ActiveCfg = debug|x64
+		{1703E8EE-6787-3163-A71D-D68E1D66FCA2}.debug|x64.Build.0 = debug|x64
+		{1703E8EE-6787-3163-A71D-D68E1D66FCA2}.checked|x64.ActiveCfg = checked|x64
+		{1703E8EE-6787-3163-A71D-D68E1D66FCA2}.checked|x64.Build.0 = checked|x64
+		{1703E8EE-6787-3163-A71D-D68E1D66FCA2}.profile|x64.ActiveCfg = profile|x64
+		{1703E8EE-6787-3163-A71D-D68E1D66FCA2}.profile|x64.Build.0 = profile|x64
+		{1703E8EE-6787-3163-A71D-D68E1D66FCA2}.release|x64.ActiveCfg = release|x64
+		{1703E8EE-6787-3163-A71D-D68E1D66FCA2}.release|x64.Build.0 = release|x64
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

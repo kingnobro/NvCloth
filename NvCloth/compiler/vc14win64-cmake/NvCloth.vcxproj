@@ -1,0 +1,495 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="debug|x64">
+      <Configuration>debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="checked|x64">
+      <Configuration>checked</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="profile|x64">
+      <Configuration>profile</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="release|x64">
+      <Configuration>release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{DDD42D62-DF14-3EF3-9D5B-551AD64F90B5}</ProjectGUID>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>NvCloth</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='checked|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='profile|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='debug|x64'">C:\Users\wengold\Desktop\NvCloth\NvCloth\bin\vc14win64-cmake\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='debug|x64'">NvCloth.dir\debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='debug|x64'">NvClothDEBUG_x64</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='debug|x64'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='debug|x64'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='debug|x64'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='checked|x64'">C:\Users\wengold\Desktop\NvCloth\NvCloth\bin\vc14win64-cmake\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='checked|x64'">NvCloth.dir\checked\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='checked|x64'">NvClothCHECKED_x64</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='checked|x64'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='checked|x64'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='checked|x64'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='profile|x64'">C:\Users\wengold\Desktop\NvCloth\NvCloth\bin\vc14win64-cmake\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='profile|x64'">NvCloth.dir\profile\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='profile|x64'">NvClothPROFILE_x64</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='profile|x64'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='profile|x64'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='profile|x64'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='release|x64'">C:\Users\wengold\Desktop\NvCloth\NvCloth\bin\vc14win64-cmake\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='release|x64'">NvCloth.dir\release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='release|x64'">NvCloth_x64</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='release|x64'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='release|x64'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='release|x64'">true</GenerateManifest>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='debug|x64'">
+    <ClCompile>
+      <AdditionalOptions> /d2Zi+ /RTCsu /Zo %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\Users\wengold\Desktop\NvCloth\PxShared\include;C:\Users\wengold\Desktop\NvCloth\PxShared\src\foundation\include;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\cmake\windows\..\..\..\include;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\cmake\windows\..\..\..\extensions\include;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\cmake\windows\..\..\..\src;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\cmake\windows\..\..\..\extensions\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>debug/</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4514;4820;4127;4710;4711;4577;4530</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>NV_CLOTH_IMPORT=PX_DLL_EXPORT;_DEBUG;PX_DEBUG=1;PX_CHECKED=1;PX_NVTX=0;PX_PHYSX_DLL_NAME_POSTFIX=DEBUG;NV_CLOTH_ENABLE_DX11=1;NV_CLOTH_ENABLE_CUDA=0;WIN64;CMAKE_INTDIR="debug";NvCloth_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>C:\Users\wengold\Desktop\NvCloth\NvCloth\bin\vc14win64-cmake\NvClothDEBUG_x64.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NV_CLOTH_IMPORT=PX_DLL_EXPORT;_DEBUG;PX_DEBUG=1;PX_CHECKED=1;PX_NVTX=0;PX_PHYSX_DLL_NAME_POSTFIX=DEBUG;NV_CLOTH_ENABLE_DX11=1;NV_CLOTH_ENABLE_CUDA=0;WIN64;CMAKE_INTDIR=\"debug\";NvCloth_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\wengold\Desktop\NvCloth\PxShared\include;C:\Users\wengold\Desktop\NvCloth\PxShared\src\foundation\include;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\cmake\windows\..\..\..\include;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\cmake\windows\..\..\..\extensions\include;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\cmake\windows\..\..\..\src;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\cmake\windows\..\..\..\extensions\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\wengold\Desktop\NvCloth\PxShared\include;C:\Users\wengold\Desktop\NvCloth\PxShared\src\foundation\include;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\cmake\windows\..\..\..\include;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\cmake\windows\..\..\..\extensions\include;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\cmake\windows\..\..\..\src;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\cmake\windows\..\..\..\extensions\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <DelayLoadDLLs>nvcuda.dll</DelayLoadDLLs>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+      <GenerateMapFile>true</GenerateMapFile>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/wengold/Desktop/NvCloth/NvCloth/lib/vc14win64-cmake/NvClothDEBUG_x64.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/wengold/Desktop/NvCloth/NvCloth/bin/vc14win64-cmake/NvClothDEBUG_x64.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='checked|x64'">
+    <ClCompile>
+      <AdditionalOptions> /d2Zi+ %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\Users\wengold\Desktop\NvCloth\PxShared\include;C:\Users\wengold\Desktop\NvCloth\PxShared\src\foundation\include;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\cmake\windows\..\..\..\include;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\cmake\windows\..\..\..\extensions\include;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\cmake\windows\..\..\..\src;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\cmake\windows\..\..\..\extensions\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>checked/</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4514;4820;4127;4710;4711;4577;4530</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Full</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <PreprocessorDefinitions>NV_CLOTH_IMPORT=PX_DLL_EXPORT;NDEBUG;PX_CHECKED=1;PX_NVTX=0;PX_PHYSX_DLL_NAME_POSTFIX=CHECKED;NV_CLOTH_ENABLE_DX11=1;NV_CLOTH_ENABLE_CUDA=0;WIN64;CMAKE_INTDIR="checked";NvCloth_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>C:\Users\wengold\Desktop\NvCloth\NvCloth\bin\vc14win64-cmake\NvClothCHECKED_x64.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NV_CLOTH_IMPORT=PX_DLL_EXPORT;NDEBUG;PX_CHECKED=1;PX_NVTX=0;PX_PHYSX_DLL_NAME_POSTFIX=CHECKED;NV_CLOTH_ENABLE_DX11=1;NV_CLOTH_ENABLE_CUDA=0;WIN64;CMAKE_INTDIR=\"checked\";NvCloth_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\wengold\Desktop\NvCloth\PxShared\include;C:\Users\wengold\Desktop\NvCloth\PxShared\src\foundation\include;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\cmake\windows\..\..\..\include;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\cmake\windows\..\..\..\extensions\include;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\cmake\windows\..\..\..\src;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\cmake\windows\..\..\..\extensions\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\wengold\Desktop\NvCloth\PxShared\include;C:\Users\wengold\Desktop\NvCloth\PxShared\src\foundation\include;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\cmake\windows\..\..\..\include;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\cmake\windows\..\..\..\extensions\include;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\cmake\windows\..\..\..\src;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\cmake\windows\..\..\..\extensions\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <DelayLoadDLLs>nvcuda.dll</DelayLoadDLLs>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+      <GenerateMapFile>true</GenerateMapFile>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/wengold/Desktop/NvCloth/NvCloth/lib/vc14win64-cmake/NvClothCHECKED_x64.lib</ImportLibrary>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <ProgramDataBaseFile>C:/Users/wengold/Desktop/NvCloth/NvCloth/bin/vc14win64-cmake/NvClothCHECKED_x64.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='profile|x64'">
+    <ClCompile>
+      <AdditionalOptions> /d2Zi+ %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\Users\wengold\Desktop\NvCloth\PxShared\include;C:\Users\wengold\Desktop\NvCloth\PxShared\src\foundation\include;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\cmake\windows\..\..\..\include;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\cmake\windows\..\..\..\extensions\include;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\cmake\windows\..\..\..\src;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\cmake\windows\..\..\..\extensions\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>profile/</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4514;4820;4127;4710;4711;4577;4530</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Full</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <PreprocessorDefinitions>NV_CLOTH_IMPORT=PX_DLL_EXPORT;NDEBUG;PX_PROFILE=1;PX_NVTX=0;PX_PHYSX_DLL_NAME_POSTFIX=PROFILE;NV_CLOTH_ENABLE_DX11=1;NV_CLOTH_ENABLE_CUDA=0;WIN64;CMAKE_INTDIR="profile";NvCloth_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>C:\Users\wengold\Desktop\NvCloth\NvCloth\bin\vc14win64-cmake\NvClothPROFILE_x64.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NV_CLOTH_IMPORT=PX_DLL_EXPORT;NDEBUG;PX_PROFILE=1;PX_NVTX=0;PX_PHYSX_DLL_NAME_POSTFIX=PROFILE;NV_CLOTH_ENABLE_DX11=1;NV_CLOTH_ENABLE_CUDA=0;WIN64;CMAKE_INTDIR=\"profile\";NvCloth_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\wengold\Desktop\NvCloth\PxShared\include;C:\Users\wengold\Desktop\NvCloth\PxShared\src\foundation\include;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\cmake\windows\..\..\..\include;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\cmake\windows\..\..\..\extensions\include;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\cmake\windows\..\..\..\src;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\cmake\windows\..\..\..\extensions\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\wengold\Desktop\NvCloth\PxShared\include;C:\Users\wengold\Desktop\NvCloth\PxShared\src\foundation\include;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\cmake\windows\..\..\..\include;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\cmake\windows\..\..\..\extensions\include;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\cmake\windows\..\..\..\src;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\cmake\windows\..\..\..\extensions\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <DelayLoadDLLs>nvcuda.dll</DelayLoadDLLs>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+      <GenerateMapFile>true</GenerateMapFile>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/wengold/Desktop/NvCloth/NvCloth/lib/vc14win64-cmake/NvClothPROFILE_x64.lib</ImportLibrary>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <ProgramDataBaseFile>C:/Users/wengold/Desktop/NvCloth/NvCloth/bin/vc14win64-cmake/NvClothPROFILE_x64.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='release|x64'">
+    <ClCompile>
+      <AdditionalOptions> /d2Zi+ %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\Users\wengold\Desktop\NvCloth\PxShared\include;C:\Users\wengold\Desktop\NvCloth\PxShared\src\foundation\include;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\cmake\windows\..\..\..\include;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\cmake\windows\..\..\..\extensions\include;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\cmake\windows\..\..\..\src;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\cmake\windows\..\..\..\extensions\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>release/</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4514;4820;4127;4710;4711;4577;4530</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Full</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <WarningLevel>Level4</WarningLevel>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <PreprocessorDefinitions>NV_CLOTH_IMPORT=PX_DLL_EXPORT;NDEBUG;NV_CLOTH_ENABLE_DX11=1;NV_CLOTH_ENABLE_CUDA=0;WIN64;CMAKE_INTDIR="release";NvCloth_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>C:\Users\wengold\Desktop\NvCloth\NvCloth\bin\vc14win64-cmake\NvCloth_x64.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NV_CLOTH_IMPORT=PX_DLL_EXPORT;NDEBUG;NV_CLOTH_ENABLE_DX11=1;NV_CLOTH_ENABLE_CUDA=0;WIN64;CMAKE_INTDIR=\"release\";NvCloth_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\wengold\Desktop\NvCloth\PxShared\include;C:\Users\wengold\Desktop\NvCloth\PxShared\src\foundation\include;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\cmake\windows\..\..\..\include;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\cmake\windows\..\..\..\extensions\include;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\cmake\windows\..\..\..\src;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\cmake\windows\..\..\..\extensions\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\wengold\Desktop\NvCloth\PxShared\include;C:\Users\wengold\Desktop\NvCloth\PxShared\src\foundation\include;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\cmake\windows\..\..\..\include;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\cmake\windows\..\..\..\extensions\include;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\cmake\windows\..\..\..\src;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\cmake\windows\..\..\..\extensions\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <DelayLoadDLLs>nvcuda.dll</DelayLoadDLLs>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+      <GenerateMapFile>true</GenerateMapFile>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/wengold/Desktop/NvCloth/NvCloth/lib/vc14win64-cmake/NvCloth_x64.lib</ImportLibrary>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <ProgramDataBaseFile>C:/Users/wengold/Desktop/NvCloth/NvCloth/bin/vc14win64-cmake/NvCloth_x64.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\cmake\windows\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='debug|x64'">Building Custom Rule C:/Users/wengold/Desktop/NvCloth/NvCloth/compiler/cmake/windows/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='debug|x64'">setlocal
+C:\packman-repo\chk\cmake-x64\3.7.0\bin\cmake.exe -HC:/Users/wengold/Desktop/NvCloth/NvCloth/compiler/cmake/windows -BC:/Users/wengold/Desktop/NvCloth/NvCloth/compiler/vc14win64-cmake --check-stamp-file C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\vc14win64-cmake\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='debug|x64'">C:/Users/wengold/Desktop/NvCloth/NvCloth/compiler/cmake/windows/CMakeLists.txt;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\cmake\windows\CMakeLists.txt;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeDetermineSystem.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeSystem.cmake.in;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\vc14win64-cmake\CMakeFiles\3.7.0\CMakeSystem.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeSystemSpecificInitialize.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeDetermineCCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeDetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeDetermineCompilerId.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeCompilerIdDetection.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeParseArguments.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\GNU-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\TI-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CompilerId\VS-10.vcxproj.in;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeFindBinUtils.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeCCompiler.cmake.in;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\vc14win64-cmake\CMakeFiles\3.7.0\CMakeCCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeDetermineCXXCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeDetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Platform\Windows-Determine-CXX.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeDetermineCompilerId.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeCompilerIdDetection.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeParseArguments.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\GNU-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\TI-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CompilerId\VS-10.vcxproj.in;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeFindBinUtils.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeCXXCompiler.cmake.in;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\vc14win64-cmake\CMakeFiles\3.7.0\CMakeCXXCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeSystemSpecificInformation.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeGenericSystem.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Platform\Windows.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Platform\WindowsPaths.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeCInformation.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Platform\Windows-MSVC-C.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeDetermineRCCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeRCCompiler.cmake.in;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\vc14win64-cmake\CMakeFiles\3.7.0\CMakeRCCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeRCInformation.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeTestRCCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeTestCCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeTestCompilerCommon.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeDetermineCompilerABI.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeParseImplicitLinkInfo.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeCCompilerABI.c;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeDetermineCompileFeatures.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeCCompiler.cmake.in;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\vc14win64-cmake\CMakeFiles\3.7.0\CMakeCCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeCXXInformation.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\MSVC-CXX.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Platform\Windows-MSVC-CXX.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeTestCXXCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeTestCompilerCommon.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeDetermineCompilerABI.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeParseImplicitLinkInfo.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeCXXCompilerABI.cpp;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeDetermineCompileFeatures.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Internal\FeatureTesting.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\MSVC-CXX-FeatureTests.cmake;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\vc14win64-cmake\CMakeFiles\feature_tests.cxx;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeCXXCompiler.cmake.in;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\vc14win64-cmake\CMakeFiles\3.7.0\CMakeCXXCompiler.cmake;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\cmake\common\CMakeLists.txt;C:\Users\wengold\Desktop\NvCloth\NvCloth\Externals\CMakeModules\SetOutputPaths.cmake;C:\Users\wengold\Desktop\NvCloth\NvCloth\Externals\CMakeModules\FindPxShared.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\FindPackageHandleStandardArgs.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\FindPackageMessage.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeParseArguments.cmake;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\cmake\windows\NvCloth.cmake;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\cmake\common\NvCloth.cmake;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\cmake\windows\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='debug|x64'">C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\vc14win64-cmake\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='checked|x64'">Building Custom Rule C:/Users/wengold/Desktop/NvCloth/NvCloth/compiler/cmake/windows/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='checked|x64'">setlocal
+C:\packman-repo\chk\cmake-x64\3.7.0\bin\cmake.exe -HC:/Users/wengold/Desktop/NvCloth/NvCloth/compiler/cmake/windows -BC:/Users/wengold/Desktop/NvCloth/NvCloth/compiler/vc14win64-cmake --check-stamp-file C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\vc14win64-cmake\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='checked|x64'">C:/Users/wengold/Desktop/NvCloth/NvCloth/compiler/cmake/windows/CMakeLists.txt;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\cmake\windows\CMakeLists.txt;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeDetermineSystem.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeSystem.cmake.in;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\vc14win64-cmake\CMakeFiles\3.7.0\CMakeSystem.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeSystemSpecificInitialize.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeDetermineCCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeDetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeDetermineCompilerId.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeCompilerIdDetection.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeParseArguments.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\GNU-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\TI-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CompilerId\VS-10.vcxproj.in;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeFindBinUtils.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeCCompiler.cmake.in;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\vc14win64-cmake\CMakeFiles\3.7.0\CMakeCCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeDetermineCXXCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeDetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Platform\Windows-Determine-CXX.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeDetermineCompilerId.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeCompilerIdDetection.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeParseArguments.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\GNU-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\TI-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CompilerId\VS-10.vcxproj.in;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeFindBinUtils.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeCXXCompiler.cmake.in;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\vc14win64-cmake\CMakeFiles\3.7.0\CMakeCXXCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeSystemSpecificInformation.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeGenericSystem.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Platform\Windows.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Platform\WindowsPaths.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeCInformation.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Platform\Windows-MSVC-C.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeDetermineRCCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeRCCompiler.cmake.in;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\vc14win64-cmake\CMakeFiles\3.7.0\CMakeRCCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeRCInformation.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeTestRCCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeTestCCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeTestCompilerCommon.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeDetermineCompilerABI.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeParseImplicitLinkInfo.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeCCompilerABI.c;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeDetermineCompileFeatures.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeCCompiler.cmake.in;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\vc14win64-cmake\CMakeFiles\3.7.0\CMakeCCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeCXXInformation.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\MSVC-CXX.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Platform\Windows-MSVC-CXX.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeTestCXXCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeTestCompilerCommon.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeDetermineCompilerABI.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeParseImplicitLinkInfo.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeCXXCompilerABI.cpp;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeDetermineCompileFeatures.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Internal\FeatureTesting.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\MSVC-CXX-FeatureTests.cmake;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\vc14win64-cmake\CMakeFiles\feature_tests.cxx;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeCXXCompiler.cmake.in;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\vc14win64-cmake\CMakeFiles\3.7.0\CMakeCXXCompiler.cmake;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\cmake\common\CMakeLists.txt;C:\Users\wengold\Desktop\NvCloth\NvCloth\Externals\CMakeModules\SetOutputPaths.cmake;C:\Users\wengold\Desktop\NvCloth\NvCloth\Externals\CMakeModules\FindPxShared.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\FindPackageHandleStandardArgs.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\FindPackageMessage.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeParseArguments.cmake;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\cmake\windows\NvCloth.cmake;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\cmake\common\NvCloth.cmake;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\cmake\windows\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='checked|x64'">C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\vc14win64-cmake\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='checked|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='profile|x64'">Building Custom Rule C:/Users/wengold/Desktop/NvCloth/NvCloth/compiler/cmake/windows/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='profile|x64'">setlocal
+C:\packman-repo\chk\cmake-x64\3.7.0\bin\cmake.exe -HC:/Users/wengold/Desktop/NvCloth/NvCloth/compiler/cmake/windows -BC:/Users/wengold/Desktop/NvCloth/NvCloth/compiler/vc14win64-cmake --check-stamp-file C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\vc14win64-cmake\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='profile|x64'">C:/Users/wengold/Desktop/NvCloth/NvCloth/compiler/cmake/windows/CMakeLists.txt;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\cmake\windows\CMakeLists.txt;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeDetermineSystem.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeSystem.cmake.in;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\vc14win64-cmake\CMakeFiles\3.7.0\CMakeSystem.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeSystemSpecificInitialize.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeDetermineCCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeDetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeDetermineCompilerId.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeCompilerIdDetection.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeParseArguments.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\GNU-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\TI-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CompilerId\VS-10.vcxproj.in;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeFindBinUtils.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeCCompiler.cmake.in;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\vc14win64-cmake\CMakeFiles\3.7.0\CMakeCCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeDetermineCXXCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeDetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Platform\Windows-Determine-CXX.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeDetermineCompilerId.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeCompilerIdDetection.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeParseArguments.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\GNU-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\TI-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CompilerId\VS-10.vcxproj.in;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeFindBinUtils.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeCXXCompiler.cmake.in;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\vc14win64-cmake\CMakeFiles\3.7.0\CMakeCXXCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeSystemSpecificInformation.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeGenericSystem.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Platform\Windows.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Platform\WindowsPaths.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeCInformation.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Platform\Windows-MSVC-C.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeDetermineRCCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeRCCompiler.cmake.in;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\vc14win64-cmake\CMakeFiles\3.7.0\CMakeRCCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeRCInformation.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeTestRCCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeTestCCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeTestCompilerCommon.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeDetermineCompilerABI.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeParseImplicitLinkInfo.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeCCompilerABI.c;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeDetermineCompileFeatures.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeCCompiler.cmake.in;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\vc14win64-cmake\CMakeFiles\3.7.0\CMakeCCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeCXXInformation.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\MSVC-CXX.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Platform\Windows-MSVC-CXX.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeTestCXXCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeTestCompilerCommon.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeDetermineCompilerABI.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeParseImplicitLinkInfo.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeCXXCompilerABI.cpp;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeDetermineCompileFeatures.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Internal\FeatureTesting.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\MSVC-CXX-FeatureTests.cmake;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\vc14win64-cmake\CMakeFiles\feature_tests.cxx;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeCXXCompiler.cmake.in;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\vc14win64-cmake\CMakeFiles\3.7.0\CMakeCXXCompiler.cmake;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\cmake\common\CMakeLists.txt;C:\Users\wengold\Desktop\NvCloth\NvCloth\Externals\CMakeModules\SetOutputPaths.cmake;C:\Users\wengold\Desktop\NvCloth\NvCloth\Externals\CMakeModules\FindPxShared.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\FindPackageHandleStandardArgs.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\FindPackageMessage.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeParseArguments.cmake;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\cmake\windows\NvCloth.cmake;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\cmake\common\NvCloth.cmake;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\cmake\windows\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='profile|x64'">C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\vc14win64-cmake\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='profile|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='release|x64'">Building Custom Rule C:/Users/wengold/Desktop/NvCloth/NvCloth/compiler/cmake/windows/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='release|x64'">setlocal
+C:\packman-repo\chk\cmake-x64\3.7.0\bin\cmake.exe -HC:/Users/wengold/Desktop/NvCloth/NvCloth/compiler/cmake/windows -BC:/Users/wengold/Desktop/NvCloth/NvCloth/compiler/vc14win64-cmake --check-stamp-file C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\vc14win64-cmake\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='release|x64'">C:/Users/wengold/Desktop/NvCloth/NvCloth/compiler/cmake/windows/CMakeLists.txt;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\cmake\windows\CMakeLists.txt;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeDetermineSystem.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeSystem.cmake.in;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\vc14win64-cmake\CMakeFiles\3.7.0\CMakeSystem.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeSystemSpecificInitialize.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeDetermineCCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeDetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeDetermineCompilerId.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeCompilerIdDetection.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeParseArguments.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\GNU-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\TI-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CompilerId\VS-10.vcxproj.in;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeFindBinUtils.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeCCompiler.cmake.in;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\vc14win64-cmake\CMakeFiles\3.7.0\CMakeCCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeDetermineCXXCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeDetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Platform\Windows-Determine-CXX.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeDetermineCompilerId.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeCompilerIdDetection.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeParseArguments.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\GNU-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\TI-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CompilerId\VS-10.vcxproj.in;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeFindBinUtils.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeCXXCompiler.cmake.in;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\vc14win64-cmake\CMakeFiles\3.7.0\CMakeCXXCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeSystemSpecificInformation.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeGenericSystem.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Platform\Windows.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Platform\WindowsPaths.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeCInformation.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Platform\Windows-MSVC-C.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeDetermineRCCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeRCCompiler.cmake.in;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\vc14win64-cmake\CMakeFiles\3.7.0\CMakeRCCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeRCInformation.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeTestRCCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeTestCCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeTestCompilerCommon.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeDetermineCompilerABI.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeParseImplicitLinkInfo.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeCCompilerABI.c;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeDetermineCompileFeatures.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeCCompiler.cmake.in;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\vc14win64-cmake\CMakeFiles\3.7.0\CMakeCCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeCXXInformation.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\MSVC-CXX.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Platform\Windows-MSVC-CXX.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeTestCXXCompiler.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeTestCompilerCommon.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeDetermineCompilerABI.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeParseImplicitLinkInfo.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeCXXCompilerABI.cpp;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeDetermineCompileFeatures.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Internal\FeatureTesting.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\Compiler\MSVC-CXX-FeatureTests.cmake;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\vc14win64-cmake\CMakeFiles\feature_tests.cxx;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeCXXCompiler.cmake.in;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\vc14win64-cmake\CMakeFiles\3.7.0\CMakeCXXCompiler.cmake;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\cmake\common\CMakeLists.txt;C:\Users\wengold\Desktop\NvCloth\NvCloth\Externals\CMakeModules\SetOutputPaths.cmake;C:\Users\wengold\Desktop\NvCloth\NvCloth\Externals\CMakeModules\FindPxShared.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\FindPackageHandleStandardArgs.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\FindPackageMessage.cmake;C:\packman-repo\chk\cmake-x64\3.7.0\share\cmake-3.7\Modules\CMakeParseArguments.cmake;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\cmake\windows\NvCloth.cmake;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\cmake\common\NvCloth.cmake;C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\cmake\windows\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='release|x64'">C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\vc14win64-cmake\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\ps\windows\PsWindowsFPU.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\ps\windows\PsWindowsInclude.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\dx\DxBatchedVector.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\dx\DxCheckSuccess.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\dx\DxCloth.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\dx\DxClothData.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\dx\DxContextLock.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\dx\DxDeviceVector.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\dx\DxFabric.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\dx\DxFactory.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\dx\DxSolver.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\dx\DxSolverKernelBlob.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\include\NvCloth\Allocator.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\include\NvCloth\Callbacks.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\include\NvCloth\Cloth.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\include\NvCloth\DxContextManagerCallback.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\include\NvCloth\Fabric.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\include\NvCloth\Factory.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\include\NvCloth\PhaseConfig.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\include\NvCloth\Range.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\include\NvCloth\Solver.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\include\NvCloth\ps\Ps.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\include\NvCloth\ps\PsAtomic.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\include\NvCloth\ps\PsAlignedMalloc.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\include\NvCloth\ps\PsAllocator.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\include\NvCloth\ps\PsArray.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\include\NvCloth\ps\PsBasicTemplates.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\include\NvCloth\ps\PsBitUtils.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\include\NvCloth\ps\PsHash.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\include\NvCloth\ps\PsHashInternals.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\include\NvCloth\ps\PsHashMap.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\include\NvCloth\ps\PsIntrinsics.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\include\NvCloth\ps\PsUserAllocated.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\include\NvCloth\ps\PsMathUtils.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\BoundingBox.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\ClothBase.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\ClothClone.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\ClothImpl.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\IndexPair.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\IterationState.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\MovingAverage.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\PointInterpolator.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\Simd.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\StackAllocator.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\SwCloth.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\SwClothData.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\SwCollision.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\SwCollisionHelpers.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\SwFabric.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\SwFactory.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\SwInterCollision.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\SwSelfCollision.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\SwSolver.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\SwSolverKernel.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\TripletScheduler.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\Vec4T.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\NvSimd\NvSimd4f.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\NvSimd\NvSimd4i.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\NvSimd\NvSimdTypes.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\NvSimd\neon\NvNeonSimd4f.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\NvSimd\neon\NvNeonSimd4i.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\NvSimd\neon\NvNeonSimdTypes.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\NvSimd\scalar\NvScalarSimd4f.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\NvSimd\scalar\NvScalarSimd4i.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\NvSimd\scalar\NvScalarSimdTypes.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\NvSimd\sse2\NvSse2Simd4f.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\NvSimd\sse2\NvSse2Simd4i.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\NvSimd\sse2\NvSse2SimdTypes.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\scalar\SwCollisionHelpers.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\sse2\SwCollisionHelpers.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\sse2\SwSolveConstraints.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\ps\PsAlloca.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\ps\PsFPU.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\ps\PsSort.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\ps\PsSortInternals.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\ps\PsUtilities.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\ps\PxIntrinsics.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\extensions\include\NvClothExt\ClothFabricCooker.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\extensions\include\NvClothExt\ClothMeshDesc.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\extensions\include\NvClothExt\ClothMeshQuadifier.h" />
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\extensions\include\NvClothExt\ClothTetherCooker.h" />
+    <ClCompile Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\ps\windows\PsWindowsAtomic.cpp"  />
+    <ClCompile Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\dx\DxCloth.cpp"  />
+    <ClCompile Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\dx\DxClothClone.cpp"  />
+    <ClCompile Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\dx\DxClothData.cpp"  />
+    <ClCompile Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\dx\DxContextLock.cpp"  />
+    <ClCompile Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\dx\DxFabric.cpp"  />
+    <ClCompile Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\dx\DxFactory.cpp"  />
+    <ClCompile Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\dx\DxSolver.cpp"  />
+    <ClCompile Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\avx\SwSolveConstraints.cpp" >
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='debug|x64'">AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='checked|x64'">AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='profile|x64'">AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='release|x64'">AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <ClCompile Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\include\NvCloth\ps\PsAllocator.cpp"  />
+    <ClCompile Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\Allocator.cpp"  />
+    <ClCompile Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\Callbacks.cpp"  />
+    <ClCompile Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\Factory.cpp"  />
+    <ClCompile Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\PhaseConfig.cpp"  />
+    <ClCompile Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\SwCloth.cpp"  />
+    <ClCompile Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\SwClothData.cpp"  />
+    <ClCompile Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\SwCollision.cpp"  />
+    <ClCompile Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\SwFabric.cpp"  />
+    <ClCompile Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\SwFactory.cpp"  />
+    <ClCompile Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\SwInterCollision.cpp"  />
+    <ClCompile Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\SwSelfCollision.cpp"  />
+    <ClCompile Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\SwSolver.cpp"  />
+    <ClCompile Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\SwSolverKernel.cpp"  />
+    <ClCompile Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\TripletScheduler.cpp"  />
+    <ClCompile Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\extensions\src\ClothFabricCooker.cpp"  />
+    <ClCompile Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\extensions\src\ClothGeodesicTetherCooker.cpp"  />
+    <ClCompile Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\extensions\src\ClothMeshQuadifier.cpp"  />
+    <ClCompile Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\extensions\src\ClothSimpleTetherCooker.cpp"  />
+    <None Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\dx\DxSortKernel.inc" />
+    <FXCompile Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\dx\DxSolverKernel.hlsl">
+      <ShaderType>Compute</ShaderType>
+      <ShaderModel>5.0</ShaderModel>
+      <AdditionalOptions>/Vn gDxSolverKernel /Fh C:/Users/wengold/Desktop/NvCloth/NvCloth/compiler/cmake/windows/../../..//src/dx/DxSolverKernelBlob.h</AdditionalOptions>
+    </FXCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:/Users/wengold/Desktop/NvCloth/NvCloth/compiler/vc14win64-cmake/ZERO_CHECK.vcxproj">
+      <Project>1703E8EE-6787-3163-A71D-D68E1D66FCA2</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

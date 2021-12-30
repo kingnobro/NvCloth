@@ -1,0 +1,403 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\ps\windows\PsWindowsAtomic.cpp">
+      <Filter>src\ps\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\dx\DxCloth.cpp">
+      <Filter>src\dx</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\dx\DxClothClone.cpp">
+      <Filter>src\dx</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\dx\DxClothData.cpp">
+      <Filter>src\dx</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\dx\DxContextLock.cpp">
+      <Filter>src\dx</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\dx\DxFabric.cpp">
+      <Filter>src\dx</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\dx\DxFactory.cpp">
+      <Filter>src\dx</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\dx\DxSolver.cpp">
+      <Filter>src\dx</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\avx\SwSolveConstraints.cpp">
+      <Filter>src\avx</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\include\NvCloth\ps\PsAllocator.cpp">
+      <Filter>include\NvCloth\ps</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\Allocator.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\Callbacks.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\Factory.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\PhaseConfig.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\SwCloth.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\SwClothData.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\SwCollision.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\SwFabric.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\SwFactory.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\SwInterCollision.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\SwSelfCollision.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\SwSolver.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\SwSolverKernel.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\TripletScheduler.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\extensions\src\ClothFabricCooker.cpp">
+      <Filter>extensions\src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\extensions\src\ClothGeodesicTetherCooker.cpp">
+      <Filter>extensions\src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\extensions\src\ClothMeshQuadifier.cpp">
+      <Filter>extensions\src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\extensions\src\ClothSimpleTetherCooker.cpp">
+      <Filter>extensions\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\ps\windows\PsWindowsFPU.h">
+      <Filter>src\ps\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\ps\windows\PsWindowsInclude.h">
+      <Filter>src\ps\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\dx\DxBatchedVector.h">
+      <Filter>src\dx</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\dx\DxCheckSuccess.h">
+      <Filter>src\dx</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\dx\DxCloth.h">
+      <Filter>src\dx</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\dx\DxClothData.h">
+      <Filter>src\dx</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\dx\DxContextLock.h">
+      <Filter>src\dx</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\dx\DxDeviceVector.h">
+      <Filter>src\dx</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\dx\DxFabric.h">
+      <Filter>src\dx</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\dx\DxFactory.h">
+      <Filter>src\dx</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\dx\DxSolver.h">
+      <Filter>src\dx</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\dx\DxSolverKernelBlob.h">
+      <Filter>src\dx</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\include\NvCloth\Allocator.h">
+      <Filter>include\NvCloth</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\include\NvCloth\Callbacks.h">
+      <Filter>include\NvCloth</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\include\NvCloth\Cloth.h">
+      <Filter>include\NvCloth</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\include\NvCloth\DxContextManagerCallback.h">
+      <Filter>include\NvCloth</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\include\NvCloth\Fabric.h">
+      <Filter>include\NvCloth</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\include\NvCloth\Factory.h">
+      <Filter>include\NvCloth</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\include\NvCloth\PhaseConfig.h">
+      <Filter>include\NvCloth</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\include\NvCloth\Range.h">
+      <Filter>include\NvCloth</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\include\NvCloth\Solver.h">
+      <Filter>include\NvCloth</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\include\NvCloth\ps\Ps.h">
+      <Filter>include\NvCloth\ps</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\include\NvCloth\ps\PsAtomic.h">
+      <Filter>include\NvCloth\ps</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\include\NvCloth\ps\PsAlignedMalloc.h">
+      <Filter>include\NvCloth\ps</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\include\NvCloth\ps\PsAllocator.h">
+      <Filter>include\NvCloth\ps</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\include\NvCloth\ps\PsArray.h">
+      <Filter>include\NvCloth\ps</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\include\NvCloth\ps\PsBasicTemplates.h">
+      <Filter>include\NvCloth\ps</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\include\NvCloth\ps\PsBitUtils.h">
+      <Filter>include\NvCloth\ps</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\include\NvCloth\ps\PsHash.h">
+      <Filter>include\NvCloth\ps</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\include\NvCloth\ps\PsHashInternals.h">
+      <Filter>include\NvCloth\ps</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\include\NvCloth\ps\PsHashMap.h">
+      <Filter>include\NvCloth\ps</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\include\NvCloth\ps\PsIntrinsics.h">
+      <Filter>include\NvCloth\ps</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\include\NvCloth\ps\PsUserAllocated.h">
+      <Filter>include\NvCloth\ps</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\include\NvCloth\ps\PsMathUtils.h">
+      <Filter>include\NvCloth\ps</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\BoundingBox.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\ClothBase.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\ClothClone.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\ClothImpl.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\IndexPair.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\IterationState.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\MovingAverage.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\PointInterpolator.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\Simd.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\StackAllocator.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\SwCloth.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\SwClothData.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\SwCollision.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\SwCollisionHelpers.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\SwFabric.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\SwFactory.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\SwInterCollision.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\SwSelfCollision.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\SwSolver.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\SwSolverKernel.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\TripletScheduler.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\Vec4T.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\NvSimd\NvSimd4f.h">
+      <Filter>src\NvSimd</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\NvSimd\NvSimd4i.h">
+      <Filter>src\NvSimd</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\NvSimd\NvSimdTypes.h">
+      <Filter>src\NvSimd</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\NvSimd\neon\NvNeonSimd4f.h">
+      <Filter>src\NvSimd\neon</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\NvSimd\neon\NvNeonSimd4i.h">
+      <Filter>src\NvSimd\neon</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\NvSimd\neon\NvNeonSimdTypes.h">
+      <Filter>src\NvSimd\neon</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\NvSimd\scalar\NvScalarSimd4f.h">
+      <Filter>src\NvSimd\scalar</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\NvSimd\scalar\NvScalarSimd4i.h">
+      <Filter>src\NvSimd\scalar</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\NvSimd\scalar\NvScalarSimdTypes.h">
+      <Filter>src\NvSimd\scalar</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\NvSimd\sse2\NvSse2Simd4f.h">
+      <Filter>src\NvSimd\sse2</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\NvSimd\sse2\NvSse2Simd4i.h">
+      <Filter>src\NvSimd\sse2</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\NvSimd\sse2\NvSse2SimdTypes.h">
+      <Filter>src\NvSimd\sse2</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\scalar\SwCollisionHelpers.h">
+      <Filter>src\scalar</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\sse2\SwCollisionHelpers.h">
+      <Filter>src\sse2</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\sse2\SwSolveConstraints.h">
+      <Filter>src\sse2</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\ps\PsAlloca.h">
+      <Filter>src\ps</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\ps\PsFPU.h">
+      <Filter>src\ps</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\ps\PsSort.h">
+      <Filter>src\ps</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\ps\PsSortInternals.h">
+      <Filter>src\ps</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\ps\PsUtilities.h">
+      <Filter>src\ps</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\ps\PxIntrinsics.h">
+      <Filter>src\ps</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\extensions\include\NvClothExt\ClothFabricCooker.h">
+      <Filter>extensions\include\NvClothExt</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\extensions\include\NvClothExt\ClothMeshDesc.h">
+      <Filter>extensions\include\NvClothExt</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\extensions\include\NvClothExt\ClothMeshQuadifier.h">
+      <Filter>extensions\include\NvClothExt</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\extensions\include\NvClothExt\ClothTetherCooker.h">
+      <Filter>extensions\include\NvClothExt</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\compiler\cmake\windows\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <FXCompile Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\dx\DxSolverKernel.hlsl">
+      <Filter>src\dx</Filter>
+    </FXCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\src\dx\DxSortKernel.inc">
+      <Filter>src\dx</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="src\NvSimd\neon">
+      <UniqueIdentifier>{E615F121-4379-3CEA-8E0A-B1DBEFCA29F7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\NvSimd\scalar">
+      <UniqueIdentifier>{8B17E7CA-D5B4-3CF1-B7A8-F8C4B9A28F0B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\NvSimd\sse2">
+      <UniqueIdentifier>{06B77AFC-5AF9-3843-8D06-45B162C120EF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\ps">
+      <UniqueIdentifier>{C26CFB0F-25D1-3AA5-8CB7-7E102B8142DA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\dx">
+      <UniqueIdentifier>{9E06FF72-9094-35E3-BAD6-6217CCAC6505}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\avx">
+      <UniqueIdentifier>{1741492F-3D3C-308A-9B4F-3E68B04696D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\NvSimd">
+      <UniqueIdentifier>{6FE1CC07-AB37-3019-B969-1A0C421A9120}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\scalar">
+      <UniqueIdentifier>{38FD83C4-6836-3AFF-AC6D-D2E70CB43DB4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\sse2">
+      <UniqueIdentifier>{132025CE-8DA2-3082-B365-6BC9FC9721E9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="extensions\include">
+      <UniqueIdentifier>{9199E5E2-C90B-302F-ADE4-1440D942B96A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="extensions\src">
+      <UniqueIdentifier>{0F612E58-EF0A-339D-B868-8A65767EF934}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{9965C967-1741-3354-B8E2-00F42FCC4D49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{816D53B3-8B3F-3ADE-862A-01F3E5834635}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="extensions">
+      <UniqueIdentifier>{87E83A2A-AB5A-3137-AA69-C1EDE98FADDF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\ps\windows">
+      <UniqueIdentifier>{F2F5209A-5D0C-3F9C-A651-5B067F88D1CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\NvCloth\ps">
+      <UniqueIdentifier>{C4465DF4-6E13-3F9E-9BBB-17C1EBF8AD9C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="extensions\include\NvClothExt">
+      <UniqueIdentifier>{33820539-E0CA-365A-B26F-423577C1FD69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\NvCloth">
+      <UniqueIdentifier>{7D6615EA-F46E-3274-91D6-D781236361CD}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

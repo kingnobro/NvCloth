@@ -1,0 +1,3 @@
+C:/Users/wengold/Desktop/NvCloth/NvCloth/compiler/vc14win64-cmake/CMakeFiles/NvCloth.dir
+C:/Users/wengold/Desktop/NvCloth/NvCloth/compiler/vc14win64-cmake/CMakeFiles/ALL_BUILD.dir
+C:/Users/wengold/Desktop/NvCloth/NvCloth/compiler/vc14win64-cmake/CMakeFiles/ZERO_CHECK.dir

@@ -1,0 +1,5 @@
+C:/Users/wengold/Desktop/NvCloth/NvCloth/samples/compiler/vc14win64-cmake/CMakeFiles/SampleBase.dir
+C:/Users/wengold/Desktop/NvCloth/NvCloth/samples/compiler/vc14win64-cmake/CMakeFiles/ALL_BUILD.dir
+C:/Users/wengold/Desktop/NvCloth/NvCloth/samples/compiler/vc14win64-cmake/CMakeFiles/ZERO_CHECK.dir
+C:/Users/wengold/Desktop/NvCloth/NvCloth/samples/compiler/vc14win64-cmake/NvCloth_bin/CMakeFiles/NvCloth.dir
+C:/Users/wengold/Desktop/NvCloth/NvCloth/samples/compiler/vc14win64-cmake/NvCloth_bin/CMakeFiles/ALL_BUILD.dir
