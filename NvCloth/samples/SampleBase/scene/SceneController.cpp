@@ -273,6 +273,7 @@ void SceneController::drawUI()
 	if(!getFactory())
 		mActivePlatform = (int)nv::cloth::Platform::CPU;
 
+	// std::cout << Scene::GetSceneCount() << std::endl;	// TODO: delete line
 	for(int i = 0; i < Scene::GetSceneCount(); i++)
 	{
 		pressed = pressed | ImGui::RadioButton(Scene::GetSceneName(i), &mActiveSceneIndex, i);

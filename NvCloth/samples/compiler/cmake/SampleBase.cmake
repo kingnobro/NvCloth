@@ -116,6 +116,8 @@ SET(SCENES_FILES
 	${SB_SCENE_SOURCE_DIR}/scenes/CCDScene.h
 	${SB_SCENE_SOURCE_DIR}/scenes/CCDScene2.cpp
 	${SB_SCENE_SOURCE_DIR}/scenes/CCDScene2.h
+	${SB_SCENE_SOURCE_DIR}/scenes/ClothScene.cpp
+	${SB_SCENE_SOURCE_DIR}/scenes/ClothScene.h
 	${SB_SCENE_SOURCE_DIR}/scenes/MultiSolverScene.cpp
 	${SB_SCENE_SOURCE_DIR}/scenes/MultiSolverScene.h
 	${SB_SCENE_SOURCE_DIR}/scenes/ScaledScene.cpp

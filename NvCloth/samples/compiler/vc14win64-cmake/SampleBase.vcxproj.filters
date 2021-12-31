@@ -109,6 +109,9 @@
     <ClCompile Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\samples\SampleBase\scene\scenes\CCDScene2.cpp">
       <Filter>Source\scene\scenes</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\samples\SampleBase\scene\scenes\ClothScene.cpp">
+      <Filter>Source\scene\scenes</Filter>
+    </ClCompile>
     <ClCompile Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\samples\SampleBase\scene\scenes\MultiSolverScene.cpp">
       <Filter>Source\scene\scenes</Filter>
     </ClCompile>
@@ -292,6 +295,9 @@
       <Filter>Source\scene\scenes</Filter>
     </ClInclude>
     <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\samples\SampleBase\scene\scenes\CCDScene2.h">
+      <Filter>Source\scene\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\samples\SampleBase\scene\scenes\ClothScene.h">
       <Filter>Source\scene\scenes</Filter>
     </ClInclude>
     <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\samples\SampleBase\scene\scenes\MultiSolverScene.h">
