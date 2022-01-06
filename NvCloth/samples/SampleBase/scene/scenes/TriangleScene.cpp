@@ -76,7 +76,7 @@ void TriangleScene::initializeCloth(int index, physx::PxVec3 offset)
 
 	//Generate triangle sphere
 	physx::PxVec3 meshOffset(0.0f, 11.0f, -1.0f);
-	auto mesh = MeshGenerator::generateIcosahedron(1.5f,1);
+	auto mesh = MeshGenerator::generateIcosahedron(1.5f, 1);
 	mesh.applyTransfom(physx::PxMat44(physx::PxTransform(meshOffset)));
 
 	//assign as collision data

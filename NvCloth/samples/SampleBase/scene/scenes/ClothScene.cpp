@@ -37,8 +37,10 @@ void ClothScene::Animate(double dt)
 		physx::PxVec4(totalTransform.transform(physx::PxVec3(-4.f,10.f,0.f) + mOffset),1.0),
 		physx::PxVec4(totalTransform.transform(physx::PxVec3(4.f,10.f,0.f) + mOffset),0.5) };
 
+	// 碰撞体随时间运动
 	mClothActor[0]->mCloth->setSpheres(nv::cloth::Range<physx::PxVec4>(spheres, spheres + 2), 0, mClothActor[0]->mCloth->getNumSpheres());
 
+	// 锥体随时间运动
 	mCollisionMehs->setTransform(totalTransform);
 
 	Scene::Animate(dt);
@@ -145,6 +147,7 @@ void ClothScene::onInitialize()
 
 	initializeCloth(0, physx::PxVec3(0.0f, 0.0f, 0.0f));
 
+	// background
 	{
 		IRenderMesh* mesh = getSceneController()->getRenderer().getPrimitiveRenderMesh(PrimitiveRenderMeshType::Plane);
 		Renderable* plane = getSceneController()->getRenderer().createRenderable(*mesh, *getSceneController()->getDefaultPlaneMaterial());

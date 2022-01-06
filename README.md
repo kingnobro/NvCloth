@@ -1,3 +1,5 @@
+[![Tvz6AS.png](https://s4.ax1x.com/2022/01/06/Tvz6AS.png)](https://imgtu.com/i/Tvz6AS)
+
 ## Build
 
 1. 不支持 Visual Studio 16 2019，需要自行下载 Visual Studio 14 2015（需要在安装界面勾选 Visual C++）
@@ -25,6 +27,8 @@
 - 在生成项目的过程中，会提示无法运行某个 exe 文件，此时需要把 Windows Kits 里的内容复制到 VS2014 目录下（网络上有解决方法）
 - 看 vs 的报错提示可以解决大部分问题
 
+
+
 ## 如何添加一个测试场景(Scene)
 
 在 SampleBase/scene/scenes 目录下，模仿其他场景，创建新文件；或许需要在 sampleBase.cmake 中添加下面两行，添加后需要重新 build
@@ -34,9 +38,53 @@ ${SB_SCENE_SOURCE_DIR}/scenes/ClothScene.cpp
 ${SB_SCENE_SOURCE_DIR}/scenes/ClothScene.h
 ```
 
-未知问题：创建新场景（.h, .cpp）文件并编译后，并没有立即出现进入新场景的按钮，要一段时间后才能出现（？）
+**未解决的问题**：创建新场景的文件（scene/scenes 文件夹下添加 .h, .cpp）并编译后，imgui 并没有立即出现进入新场景的按钮，要一段时间后才能出现
 
 
+
+## 如何生成碰撞体与碰撞数据
+
+[![TvvaUe.png](https://s4.ax1x.com/2022/01/06/TvvaUe.png)](https://imgtu.com/i/TvvaUe)
+
+1. 图中的球是由三角形网格组成的，所以自然要生成三角形面
+
+    ```c++
+    // Generate triangle sphere
+    // generateIcosahedron 函数对顶点的位置与索引做了硬编码
+    // Icosahedron: 二十面体
+    physx::PxVec3 meshOffset(0.0f, 11.0f, -1.0f);
+    auto mesh = MeshGenerator::generateIcosahedron(1.5f,1);
+    mesh.applyTransfom(physx::PxMat44(physx::PxTransform(meshOffset)));
+    ```
+
+2. 在 NvCloth 中，碰撞数据与球体数据是分开的，这意味着：如果你只添加了球体，那么布料会直接穿过球体而不会碰撞；如果你只添加了碰撞数据，那么布料会和一个虚空的球体进行碰撞。所以，为了与一个可见的球体进行碰撞，我们需要添加碰撞数据
+
+    ```c++
+    // assign as collision data
+    physx::PxVec3* collisionTriangles;
+    int vertexCount = mesh.generateTriangleList(&collisionTriangles);
+    nv::cloth::Range<const physx::PxVec3> trRange(&collisionTriangles[0], &collisionTriangles[0] + vertexCount);
+    mClothActor[index]->mCloth->setTriangles(trRange, 0, 0); // 把碰撞数据添加到 cloth 中
+    ```
+
+3. 渲染三角形
+
+    ```cpp
+    //create render mesh
+    auto renderMesh = new MeshGenerator::MeshGeneratorRenderMesh(mesh);
+    Renderable* renderable = getSceneController()->getRenderer().createRenderable(*renderMesh, *getSceneController()->getDefaultMaterial());
+    trackRenderable(renderable);
+    ```
+
+
+
+
+
+------
+
+以下是官方 README 的内容
+
+------
 
 # NvCloth 1.1.6
 
