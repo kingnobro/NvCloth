@@ -84,6 +84,9 @@
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='release|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='release|x64'">true</GenerateManifest>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug|x64'">
+    <IncludePath>C:\Users\wengold\Desktop\NvCloth\NvCloth\samples\external\assimp-5.0.1\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='debug|x64'">
     <ClCompile>
       <AdditionalOptions> /d2Zi+ /Zc:inline /RTCsu %(AdditionalOptions)</AdditionalOptions>
@@ -159,7 +162,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </PostBuildEvent>
     <Link>
       <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;d3dcompiler.lib;d3d11.lib;dxgi.lib;comctl32.lib;..\..\..\..\\NvCloth\samples\external\hbao\GFSDK_SSAO_D3D11.win64.lib;..\..\..\..\\NvCloth\samples\external\shadow_lib\GFSDK_ShadowLib_DX11.win64.lib;..\..\external\DXUT\9.15.2016.1\Core\Bin\dynamiccrt\vs2015\x64\Debug\DXUT.lib;..\..\external\DXUT\9.15.2016.1\Optional\Bin\dynamiccrt\vs2015\x64\Debug\DXUTOpt.lib;..\..\external\DirectXTex\10.5.2016.2\bin\dynamiccrt\vs2015\x64\Debug\DirectXTex.lib;..\..\lib\vc14win64-cmake\NvClothDEBUG_x64.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\lib\x64\cuda.lib</AdditionalDependencies>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;d3dcompiler.lib;d3d11.lib;dxgi.lib;comctl32.lib;..\..\..\..\\NvCloth\samples\external\hbao\GFSDK_SSAO_D3D11.win64.lib;..\..\..\..\\NvCloth\samples\external\shadow_lib\GFSDK_ShadowLib_DX11.win64.lib;..\..\external\DXUT\9.15.2016.1\Core\Bin\dynamiccrt\vs2015\x64\Debug\DXUT.lib;..\..\external\DXUT\9.15.2016.1\Optional\Bin\dynamiccrt\vs2015\x64\Debug\DXUTOpt.lib;..\..\external\DirectXTex\10.5.2016.2\bin\dynamiccrt\vs2015\x64\Debug\DirectXTex.lib;..\..\lib\vc14win64-cmake\NvClothDEBUG_x64.lib;..\..\lib\vc14win64-cmake\assimp-vc142-mtd.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.5\lib\x64\cuda.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>Debug</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
@@ -497,6 +500,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\SampleBase\renderer\Model.h" />
     <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\samples\SampleBase\core\Application.h" />
     <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\samples\SampleBase\core\DeviceManager.h" />
     <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\samples\SampleBase\core\SampleController.h" />
@@ -570,6 +574,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\samples\external\imgui\1.49\stb_rect_pack.h" />
     <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\samples\external\imgui\1.49\stb_textedit.h" />
     <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\samples\external\imgui\1.49\stb_truetype.h" />
+    <ClCompile Include="..\..\SampleBase\renderer\Model.cpp" />
     <ClCompile Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\samples\SampleBase\core\Application.cpp" />
     <ClCompile Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\samples\SampleBase\core\DeviceManager.cpp" />
     <ClCompile Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\samples\SampleBase\core\SampleController.cpp" />

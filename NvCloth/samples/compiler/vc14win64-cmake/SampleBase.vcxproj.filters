@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClCompile Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\samples\SampleBase\core\Application.cpp">
@@ -171,6 +171,9 @@
     </ClCompile>
     <ClCompile Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\samples\external\imgui\1.49\imgui_draw.cpp">
       <Filter>Source\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SampleBase\renderer\Model.cpp">
+      <Filter>Source\renderer</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -393,17 +396,14 @@
     <ClInclude Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\samples\external\imgui\1.49\stb_truetype.h">
       <Filter>Source\imgui</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\SampleBase\renderer\Model.h">
+      <Filter>Source\renderer</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\samples\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Filter Include="Source\scene\scenes">
-      <UniqueIdentifier>{D98D973D-1C37-3067-BB9E-5D3027B2A17D}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source">
-      <UniqueIdentifier>{7B491974-2E06-3169-A4E1-C060C1EF5AB5}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source\core">
       <UniqueIdentifier>{C3AEAE3D-069B-3949-8B1B-55CFC4503BB3}</UniqueIdentifier>
     </Filter>
@@ -424,6 +424,12 @@
     </Filter>
     <Filter Include="Source\task">
       <UniqueIdentifier>{EF6A3EFA-5CF3-3AC1-B60D-C30E44AFC9C7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{7B491974-2E06-3169-A4E1-C060C1EF5AB5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\scene\scenes">
+      <UniqueIdentifier>{D98D973D-1C37-3067-BB9E-5D3027B2A17D}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

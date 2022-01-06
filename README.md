@@ -1,5 +1,7 @@
 [![Tvz6AS.png](https://s4.ax1x.com/2022/01/06/Tvz6AS.png)](https://imgtu.com/i/Tvz6AS)
 
+
+
 ## Build
 
 1. 不支持 Visual Studio 16 2019，需要自行下载 Visual Studio 14 2015（需要在安装界面勾选 Visual C++）
@@ -77,6 +79,32 @@ ${SB_SCENE_SOURCE_DIR}/scenes/ClothScene.h
     ```
 
 
+
+## 添加 Assimp 库
+
+1. 下载并编译 Assimp：[link](https://github.com/assimp/assimp/blob/master/Build.md)
+
+    ```shell
+    cd assimp
+    cmake CMakeLists.txt 
+    cmake --build .
+    ```
+
+2. 将整个文件夹 assimp-5.0.1 拷贝到 samples/external 文件夹下
+
+    [![Txn8BD.png](https://s4.ax1x.com/2022/01/06/Txn8BD.png)](https://imgtu.com/i/Txn8BD)
+
+3. 将 samples/SampleBase/renderer/Model.cpp, Model.h 文件添加到 VS 项目的相同目录下（这两个文件一开始是没有被编译的，因为这两个文件需要用到 assimp 库，而 assimp 库默认不在项目中）
+
+    [![TxnGHe.png](https://s4.ax1x.com/2022/01/06/TxnGHe.png)](https://imgtu.com/i/TxnGHe)
+
+4. 配置 INCLUDE 目录
+
+5. 把 assimp-5.0.1/bin/Debug 下的 dll 文件拷贝到 sln 的同级目录
+
+6. 把 assimp-5.0.1/lib/Debug 下的 assimp-vc142-mtd.lib 文件拷贝到 samples/lib 目录下，并在 VS 的链接器中添加此 lib
+
+7. 重新开始运行调试即可
 
 
 
