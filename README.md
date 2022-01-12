@@ -100,6 +100,8 @@ ${SB_SCENE_SOURCE_DIR}/scenes/ClothScene.h
 
 4. 配置 INCLUDE 目录
 
+4. 在 链接器/输入 中把 assimp-vc142-mtd.lib 添加进附加依赖项
+
 5. 把 assimp-5.0.1/bin/Debug 下的 dll 文件拷贝到 sln 的同级目录
 
 6. 把 assimp-5.0.1/lib/Debug 下的 assimp-vc142-mtd.lib 文件拷贝到 samples/lib 目录下，并在 VS 的链接器中添加此 lib

@@ -404,6 +404,12 @@
     <CustomBuild Include="C:\Users\wengold\Desktop\NvCloth\NvCloth\samples\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
+    <Filter Include="Source\scene\scenes">
+      <UniqueIdentifier>{D98D973D-1C37-3067-BB9E-5D3027B2A17D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{7B491974-2E06-3169-A4E1-C060C1EF5AB5}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Source\core">
       <UniqueIdentifier>{C3AEAE3D-069B-3949-8B1B-55CFC4503BB3}</UniqueIdentifier>
     </Filter>
@@ -424,12 +430,6 @@
     </Filter>
     <Filter Include="Source\task">
       <UniqueIdentifier>{EF6A3EFA-5CF3-3AC1-B60D-C30E44AFC9C7}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source">
-      <UniqueIdentifier>{7B491974-2E06-3169-A4E1-C060C1EF5AB5}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source\scene\scenes">
-      <UniqueIdentifier>{D98D973D-1C37-3067-BB9E-5D3027B2A17D}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
